@@ -13,18 +13,30 @@ body {
   margin: 50px auto;
   color: black;
 }
+h1{
+  color: white;
+  filter: drop-shadow(10px 5px 7px pink);
+  font-size: 40px;
+  /* width: fit-content; */
+  text-align: center;
+  top: 0;
+}
 
 div{
-  background-color: #a96dc9;
+  background-color:#a96dc9;
+  border-radius: 10px;
 }
 
 .container {
+  margin: 10px 10px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
   align-content: space-between;
   justify-content: space-between;
   align-items: stretch;
   text-wrap: wrap;
   width: max-content;
-  display: flex;
 }
 
 .input{
@@ -33,18 +45,34 @@ div{
   height: 20px;
   padding: 10px;
   list-style: none;
+  margin-top: 30px;
+  border-radius: 10px;
+
 }
+
 .button1{
-  width: 60px;
-  height: 30px;
- margin-right: 24px;
-  border: 1px solid white;
+  display: flex;
+  position: absolute;
+  right: 38%;
+  background-color: #a96dc9;
+  width: fit-content;
+  height:  fit-content;
+  border: none;
+  font-size: large;
 }
 .button2{
-  width: 60px;
-  height: 30px;
- margin-left: 10px;
-  border: 1px solid white;
-} 
+  display: flex;
+  position: absolute;
+  right: 35%;
+  background-color: #a96dc9;
+  width: fit-content;
+  height: fit-content;
+ border: none;
+  font-size: large;
+}
+
+
+
+
 
 

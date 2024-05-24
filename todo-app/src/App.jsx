@@ -4,12 +4,12 @@ import TodoForm from './todoForm';
 import './App.css';
 
 const App = () => {
-  const [todos, setTodos] = useState([
-  ]);
-
+  const [todos, setTodos] = useState([]);
   const addTodo = text => {
-    const newTodos = [...todos, { text }];
+    const newTodo = { text: text.trim() }; // Add trim function here
+    const newTodos = [...todos, newTodo];
     setTodos(newTodos);
+
   };
 
   const completeTodo = index => {
@@ -26,6 +26,8 @@ const App = () => {
 
   return (
     <div>
+      <h1>To-do App </h1>
+      <hr />
       {todos.map((todo, index) => (
         <Todo key={index}
          index={index} 
@@ -33,7 +35,8 @@ const App = () => {
          completeTodo={completeTodo}
           removeTodo={removeTodo}
         />
-      ))}
+      ))
+        }
       <TodoForm addTodo={addTodo} />
     </div>
   );

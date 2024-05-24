@@ -9,10 +9,13 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
       <div>
         
       </div>
-      <button className='button1' onClick={() => completeTodo(index)}>done</button>
-      <button className='button2' onClick={() => removeTodo(index)}>x</button>
+      <button className='button1' onClick={() => completeTodo(index)}>✅</button>
+      <button className='button2' onClick={() => removeTodo(index)}>❎</button>
     </div>
   );
 };
+
+
+
 
 export default Todo;
