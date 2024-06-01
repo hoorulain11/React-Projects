@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100">
       <header className="text-center mt-40 ">
-        <h1 className=" underline decoration-dashed text-4xl font-bold uppercase text-pink-900">Random Quote Generator</h1>
+        <h1 className=" underline decoration-dashed text-4xl font-bold uppercase text-pink-900">Quote Generator</h1>
       </header>
       <div className="text-center w-screen h-auto mt-20">
         <p className="text-2xl font-serif text-gray-800" id="text">{quote.quote}</p>
