@@ -1,4 +1,7 @@
 import { useState } from "react"
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+
 
 function CreateStudent() {
   const [name, setName] = useState('')
@@ -7,7 +10,16 @@ function CreateStudent() {
      
    const handleSubmit = async(e)=> {
       e.preventDefault()
-      console.table([name,age])
+      try {
+        await addDoc(collection(db,'students'),{
+            name: name,
+            age:Number(age)
+        })
+        setName('')
+        setAge('')
+      } catch (error) {
+        console.log("error creating user:" , error)
+      }
    }
 
 
