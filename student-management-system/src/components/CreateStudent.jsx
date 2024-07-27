@@ -5,17 +5,18 @@ function CreateStudent() {
   const [age, setAge] = useState('')
 
      
-   const handleSubmit = async()=> {
-       alert("user created")
+   const handleSubmit = async(e)=> {
+      e.preventDefault()
+      console.table([name,age])
    }
 
 
 
   return (
     <>
-<form onSubmit={handleSubmit()}>
-    <input type="text" placeholder="enter student name" value={name} required/>
-    <input type="number" placeholder="enter student age" value={age}/>
+<form onSubmit={handleSubmit}>
+    <input type="text" placeholder="enter student name" value={name} onChange={(e)=>setName(e.target.value)} required/>
+    <input type="number" placeholder="enter student age" value={age} onChange={(e)=>setAge(e.target.value)} /> 
     <button type="submit">create student</button>
 </form>
     </>
