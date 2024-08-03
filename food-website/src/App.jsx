@@ -1,6 +1,6 @@
 // import ExplorePage from "./components/ExplorePage.jsx";
 // import Footer from "./components/Footer.jsx";
-// import HeroSection from "./components/HeroSection.jsx";
+import HeroSection from "./components/HeroSection.jsx";
 // import Menu from "./components/Menu.jsx";
 import NavBar   from "./components/Navbar.jsx";
 function App() {
@@ -8,10 +8,10 @@ function App() {
     <>
     
     <NavBar/>
-    {/* <HeroSection/>
-    <ExplorePage/>
-    <Menu/>
-    <Footer/> */}
+     <HeroSection/>
+    {/* <ExplorePage/> */}
+    {/* <Menu/> */}
+    {/* <Footer/>  */}
     </>
     
   )
