@@ -8,7 +8,7 @@ function App() {
     <>
     
     <NavBar/>
-     <HeroSection/>
+    <HeroSection/>
     <ExplorePage/>
     <Menu/>
     <Footer/> 

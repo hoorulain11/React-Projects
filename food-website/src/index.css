@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container{
-    background-image: url(./assets/background.png);
-    background-size: cover;
+    background-image: url(./assets/background.jpg);
+    background-size: cover; 
     background-repeat: no-repeat;
 }
